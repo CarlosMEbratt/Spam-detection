@@ -35,27 +35,28 @@ cd sms_spam_detection
 3. Run the script:
 
 ```bash
-python sms_spam_classifier.py
+python main.ipynb
 ```
 
 This will perform data loading, cleaning, exploration, feature engineering, and visualization.
 
-**Note:** The script currently does not include model training or saving functionality.
+**Note:** The script currently includes model training and saving functionality.
 
 ###  Data
 
-The project uses the `spam.csv` dataset containing labeled SMS messages.
+The project uses the `spam.csv` dataset containing labeled SMS messages. You can use your data but providing the same structure.
 
 ###  Project Structure
 
 ```
 sms_spam_detection/
-├── data/
-│   └── spam.csv  # SMS message dataset
-├── src/
-│   └── sms_spam_classifier.py  # Script for data processing and visualization
+├── Models/
+│   └── rf_model.sav  # Previously Random Forest trained model
+│   └── xgb_model.sav  # Previously XGBoost trained model
+├── Results/
+│   └── test_predictions.csv  # .csv with the predicted values for testing
 ├── requirements.txt  # List of required Python libraries
-└── README.txt  # This file (project documentation)
+└── main.ipynb  # Notebook with the code
 ```
 
 ###  Contributing
