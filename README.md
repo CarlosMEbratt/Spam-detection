@@ -1,4 +1,4 @@
-##  SMS Spam Detection 
+##  SMS Spam Detection using Random Forest and XGBoost
 
 This project implements a machine learning model to classify SMS messages as spam or legitimate (ham).
 
